@@ -48,6 +48,8 @@
             this.DaneFalseLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupRules.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -60,17 +62,18 @@
             this.InTextBox.Name = "InTextBox";
             this.InTextBox.Size = new System.Drawing.Size(250, 38);
             this.InTextBox.TabIndex = 0;
+            this.InTextBox.Text = "Q";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label1.Location = new System.Drawing.Point(403, 60);
+            this.label1.Location = new System.Drawing.Point(404, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 25);
+            this.label1.Size = new System.Drawing.Size(222, 25);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Podaj Znak dla Alfabetu:";
+            this.label1.Text = "Podaj jeden znak:";
             // 
             // label2
             // 
@@ -118,9 +121,9 @@
             this.DrugiZnakiemCheckBox.ForeColor = System.Drawing.Color.AliceBlue;
             this.DrugiZnakiemCheckBox.Location = new System.Drawing.Point(28, 110);
             this.DrugiZnakiemCheckBox.Name = "DrugiZnakiemCheckBox";
-            this.DrugiZnakiemCheckBox.Size = new System.Drawing.Size(395, 18);
+            this.DrugiZnakiemCheckBox.Size = new System.Drawing.Size(363, 18);
             this.DrugiZnakiemCheckBox.TabIndex = 8;
-            this.DrugiZnakiemCheckBox.Text = "Drugim Znakiem danej musi być trzeci znak z alfabetu A";
+            this.DrugiZnakiemCheckBox.Text = "Drugim Znakiem danej musi być trzeci znak z ciągu\r\n";
             this.DrugiZnakiemCheckBox.UseVisualStyleBackColor = true;
             this.DrugiZnakiemCheckBox.CheckedChanged += new System.EventHandler(this.DrugiZnakiemCheckBox_CheckedChanged);
             // 
@@ -144,9 +147,9 @@
             this.PierwszymZnakiemCheckBox.ForeColor = System.Drawing.Color.AliceBlue;
             this.PierwszymZnakiemCheckBox.Location = new System.Drawing.Point(28, 64);
             this.PierwszymZnakiemCheckBox.Name = "PierwszymZnakiemCheckBox";
-            this.PierwszymZnakiemCheckBox.Size = new System.Drawing.Size(416, 18);
+            this.PierwszymZnakiemCheckBox.Size = new System.Drawing.Size(384, 18);
             this.PierwszymZnakiemCheckBox.TabIndex = 6;
-            this.PierwszymZnakiemCheckBox.Text = "Pierwszym znakiem danej musi być drugi znak z alfabetu A";
+            this.PierwszymZnakiemCheckBox.Text = "Pierwszym znakiem danej musi być drugi znak z ciągu\r\n";
             this.PierwszymZnakiemCheckBox.UseVisualStyleBackColor = true;
             this.PierwszymZnakiemCheckBox.CheckedChanged += new System.EventHandler(this.PierwszymZnakiemCheckBox_CheckedChanged);
             // 
@@ -157,33 +160,32 @@
             this.TrzyZnakoweCheckBox.ForeColor = System.Drawing.Color.AliceBlue;
             this.TrzyZnakoweCheckBox.Location = new System.Drawing.Point(28, 41);
             this.TrzyZnakoweCheckBox.Name = "TrzyZnakoweCheckBox";
-            this.TrzyZnakoweCheckBox.Size = new System.Drawing.Size(394, 18);
+            this.TrzyZnakoweCheckBox.Size = new System.Drawing.Size(263, 18);
             this.TrzyZnakoweCheckBox.TabIndex = 5;
-            this.TrzyZnakoweCheckBox.Text = "Tylko trzyznakowe ciągi znaków z alfabetu A są danymi";
+            this.TrzyZnakoweCheckBox.Text = "Tylko trzyznakowe ciąg - są danymi\r\n";
             this.TrzyZnakoweCheckBox.UseVisualStyleBackColor = true;
             this.TrzyZnakoweCheckBox.CheckedChanged += new System.EventHandler(this.TrzyZnakoweCheckBox_CheckedChanged);
             // 
             // AlfabetTextBox
             // 
             this.AlfabetTextBox.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AlfabetTextBox.Location = new System.Drawing.Point(43, 105);
+            this.AlfabetTextBox.Location = new System.Drawing.Point(43, 289);
             this.AlfabetTextBox.Multiline = true;
             this.AlfabetTextBox.Name = "AlfabetTextBox";
             this.AlfabetTextBox.ReadOnly = true;
-            this.AlfabetTextBox.Size = new System.Drawing.Size(274, 282);
+            this.AlfabetTextBox.Size = new System.Drawing.Size(274, 143);
             this.AlfabetTextBox.TabIndex = 8;
-            this.AlfabetTextBox.Text = "k";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label3.Location = new System.Drawing.Point(38, 60);
+            this.label3.Location = new System.Drawing.Point(38, 261);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 25);
+            this.label3.Size = new System.Drawing.Size(262, 25);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Alfabet A:";
+            this.label3.Text = "Twój stworzony ciąg:";
             // 
             // pictureBox1
             // 
@@ -283,12 +285,36 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Odpowiedź";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(43, 88);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(274, 143);
+            this.textBox1.TabIndex = 18;
+            this.textBox1.Text = "Q $ 1 K a";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label4.Location = new System.Drawing.Point(38, 60);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(216, 25);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Alfabet dla reguł:";
+            // 
             // DataCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.ClientSize = new System.Drawing.Size(916, 540);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CheckButton);
@@ -301,6 +327,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.InTextBox);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(932, 579);
             this.MinimizeBox = false;
@@ -338,6 +365,8 @@
         private System.Windows.Forms.Label DaneFalseLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 
